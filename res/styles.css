@@ -21,7 +21,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: transparent;
     position: fixed;
@@ -288,4 +288,75 @@ footer{
     z-index: 2;
     width: 100vw;
     height: 100vh;
+}
+@media screen and (max-width: 426px) {
+    .banner-top{
+        height: 120%;
+        width: 100%;
+    }
+
+    .short-list-carousel{
+        width: 270px;
+    }
+    #about{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .about-box>p{
+        width: 80%;
+    }
+    .about-box{
+        padding-bottom: 20px;
+    }
+    iframe{
+        display: none;
+    }
+    .store-card{
+        width: 40px;
+        height: 40px;
+        border: solid 2px #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .store-card>h1{
+        position: absolute;
+    }
+    .long-list-carousel{
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-column-gap: -20px;
+        grid-row-gap: 30px;
+        grid-template-columns: auto auto auto;
+        overflow-x: hidden;
+    }
+    .txt-box>h2{
+        left: 110px;
+    }
+    .txt-box>p{
+        font-size: 25px;
+        position: absolute;
+        top: 180px;
+        left: 110px;
+        width: 400px;
+    }
+    .btn-circle{
+        bottom: 440px;
+        right: 5px;
+    }
+    #email>form{
+        width: 90%;
+        left: 20px;
+    }
+    fieldset{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    textarea{
+        width: 80%;
+        height: 100px;
+    }
 }
